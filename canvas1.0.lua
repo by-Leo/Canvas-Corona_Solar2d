@@ -6,7 +6,7 @@ function canvas.newImage( self_group, self_path, self_dir, self_x, self_y, self_
     elseif not self_dir then
       self_path, self_dir, self_group = self_group, self_path, nil
     end
-    local data
+    local data 
     local file = io.open( system.pathForFile( self_path, self_dir ), 'rb' )
     if file then
       data = file:read('*a')
