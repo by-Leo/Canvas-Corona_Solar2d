@@ -1,5 +1,5 @@
 local canvas = {}
-
+ 
 function canvas.newImage( self_group, self_path, self_dir, self_x, self_y, self_width, self_height )
     if not self_path then
       self_path, self_group, self_dir = self_group, nil, system.ResourceDirectory
